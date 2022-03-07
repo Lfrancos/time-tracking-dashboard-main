@@ -1,0 +1,116 @@
+body {
+    padding: 1rem;
+    font-family: $font;
+    background-color: $color-Very-dark-blue;
+    color: white;
+
+}
+h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 203px;
+    grid-auto-rows: 160px;
+    // grid-template: 160px / 1fr;
+    gap: 1rem;
+}
+.profile {
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: $color-Blue;
+    border-radius: 1rem;
+    & img {
+        width: 64px;
+
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    h1 {
+        font-size: 15px;
+        color: $color-Pale-Blue;
+    }
+}
+.info p {
+    font-size: 24px;
+}
+.filter {
+
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: $color-Desaturated-blue;
+}
+.container {
+    background-color: $color-Dark-blue;
+    // padding: 1.5rem;
+    border-radius: 1rem;
+    // height: 160px;
+    position: relative;
+    min-width: 343px;
+}
+.content {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    background-color: $color-Dark-blue;
+    // z-index: 1;
+}
+.work{
+    background-color: $color-work;
+}
+.play {
+    background-color: $color-play;
+}
+.study {
+    background-color: $color-study;
+}
+.exercise {
+    background-color: $color-exercise;
+}
+.social {
+    background-color: $color-social;
+}
+.self-care {
+    background-color: $color-selfCare;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dots {
+    display: flex;
+    gap: .3rem;
+}
+.circle {
+    width: 6px;
+    height: 6px;
+    background-color: $color-Desaturated-blue;
+    border-radius: 50%;
+
+}
+
+
+.daily {
+    display: none;
+}
+.weekly {
+    display: none;
+}
+.monthly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
