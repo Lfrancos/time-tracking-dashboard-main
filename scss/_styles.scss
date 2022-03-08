@@ -3,7 +3,9 @@ body {
     font-family: $font;
     background-color: $color-Very-dark-blue;
     color: white;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h2 {
     font-size: 1.125rem;
@@ -14,13 +16,17 @@ h3 {
     font-weight: 300;
 }
 main {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: minmax(343px, 670px);
     grid-template-rows: 203px;
     grid-auto-rows: 160px;
     // grid-template: 160px / 1fr;
     gap: 1rem;
 }
+
 .profile {
     align-items: center;
     padding: 2rem 1.5rem;
@@ -48,6 +54,15 @@ main {
     display: flex;
     justify-content: space-between;
     color: $color-Desaturated-blue;
+    p {
+        cursor: pointer;
+        &:hover {
+            color: white;
+        }
+        &:active {
+            color: $color-Desaturated-blue;
+        }
+    }
 }
 .container {
     background-color: $color-Dark-blue;
@@ -55,35 +70,147 @@ main {
     border-radius: 1rem;
     // height: 160px;
     position: relative;
-    min-width: 343px;
+    // min-width: 343px;
 }
 .content {
+    z-index: 1;
     width: 100%;
     border-radius: 1rem;
     padding: 1.5rem;
     position: absolute;
     bottom: 0;
     background-color: $color-Dark-blue;
+    cursor: pointer;
     // z-index: 1;
+    &:hover {
+        background-color: hsl(235, 46%, 37%);
+    }
 }
+
+
+
+
+
+
 .work{
     background-color: $color-work;
+    position: relative;
+    overflow: hidden;;
+    &::after {
+        content: ' ';
+        background-image: url(../images/icon-work.svg);
+        background-repeat: no-repeat;
+        // z-index: 3;
+        position:absolute;
+        top: -10px;
+        right: 1rem;
+        // right: 0px;
+        // left: 86%;
+        width: 80px;
+        height: 100%;
+
+    }
 }
 .play {
     background-color: $color-play;
+    position: relative;
+    overflow: hidden;;
+    &::after {
+        content: ' ';
+        background-image: url(../images/icon-play.svg);
+        background-repeat: no-repeat;
+        // z-index: 3;
+        position:absolute;
+        top: -10px;
+        right: 1rem;
+        // right: 0px;
+        // left: 86%;
+        width: 80px;
+        height: 100%;
+
+    }
 }
 .study {
     background-color: $color-study;
+    position: relative;
+    overflow: hidden;;
+    &::after {
+        content: ' ';
+        background-image: url(../images/icon-study.svg);
+        background-repeat: no-repeat;
+        // z-index: 3;
+        position:absolute;
+        top: -10px;
+        right: 1rem;
+        // right: 0px;
+        // left: 86%;
+        width: 80px;
+        height: 100%;
+
+    }
 }
 .exercise {
     background-color: $color-exercise;
+    position: relative;
+    overflow: hidden;;
+    &::after {
+        content: ' ';
+        background-image: url(../images/icon-exercise.svg);
+        background-repeat: no-repeat;
+        // z-index: 3;
+        position:absolute;
+        top: -10px;
+        right: 1rem;
+        // right: 0px;
+        // left: 86%;
+        width: 80px;
+        height: 100%;
+
+    }
 }
 .social {
     background-color: $color-social;
+    position: relative;
+    overflow: hidden;;
+    &::after {
+        content: ' ';
+        background-image: url(../images/icon-social.svg);
+        background-repeat: no-repeat;
+        // z-index: 3;
+        position:absolute;
+        top: -10px;
+        right: 1rem;
+        // right: 0px;
+        // left: 86%;
+        width: 80px;
+        height: 100%;
+
+    }
 }
 .self-care {
     background-color: $color-selfCare;
+    position: relative;
+    overflow: hidden;;
+    &::after {
+        content: ' ';
+        background-image: url(../images/icon-self-care.svg);
+        background-repeat: no-repeat;
+        // z-index: 3;
+        position:absolute;
+        top: -10px;
+        right: 1rem;
+        // right: 0px;
+        // left: 86%;
+        width: 80px;
+        height: 100%;
+
+    }
 }
+
+
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -92,6 +219,17 @@ main {
 .dots {
     display: flex;
     gap: .3rem;
+    cursor: pointer;
+    &:hover {
+        .circle {
+            background-color: white;
+        }
+    }
+    &:active {
+        .circle {
+            background-color: $color-Desaturated-blue;
+        }
+    }
 }
 .circle {
     width: 6px;
@@ -101,7 +239,14 @@ main {
 
 }
 
-
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        color: $color-Pale-Blue;
+    }
+}
 .daily {
     display: none;
 }
@@ -109,8 +254,43 @@ main {
     display: none;
 }
 .monthly {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
+
+}
+
+
+@media screen and (min-width: 1200px) {
+   main {
+       grid-template-columns: repeat(4, 255px);
+       grid-template-rows: 244px 244px;
+
+   }
+
+   .user {
+       grid-row: span 2;
+   }
+   .profile {
+        flex-direction: column;
+        align-items: start;
+        p {
+            font-size: 40px;
+        }
+        .info {
+            margin: 2rem 0;
+        }
+
+   }
+   .filter {
+       flex-direction: column;
+       gap: 10px;
+   }
+   .stats {
+        flex-direction: column;
+        // justify-content: start;
+        align-items: start;
+        margin-top: 1rem;
+        h3 {
+            font-size: 56px;
+        }
+   }
 }
