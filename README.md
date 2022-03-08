@@ -14,7 +14,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -34,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://your-solution-url.com)
-- Live Site URL: [here](https://your-live-site-url.com)
+- Solution URL: [here](https://github.com/Lfrancos/time-tracking-dashboard-main)
+- Live Site URL: [here](https://lfrancos.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
@@ -46,59 +45,26 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This exercise was interesting to see how to use the filters. I need to start paying more attention to the names I add to each element so that it is easy to manage the page.
+Finally something very basic clicked :) I really understood what an SPA (single page application) meant. I thought it was only for things that you created an account and things like that but you can create a simple web page with that in mind as well. (I know this is so simple to understand but it just made sense while working on this project. )
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I see how useful it is but I know need to understand how the SEO works on this since now I also see how many problems that can cause.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I need to keep working with CSS Grid. Since I was not using it that much I forgot a couple of things and had to look up things. I want to keep working with it, I don't need to remember everything but I really want to understand the very basics needed so that I can create layouts fast.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Resource 1](https://www.youtube.com/watch?v=3PHXvlpOkf4&t=1667s) - Taking a look at the about project gave me some ideas on how to approach this.
+- [Resource 2](https://www.youtube.com/watch?v=9zBsdzdE4sM) - Since I had not practice css grid for some time I use this video to remind me of the basics.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [@lorenzo.francos](https://www.lorenzofrancos.com)
+- Instagram - [@lorenzo.francos](https://www.instagram.com/lorenzo.francos/?hl=en)
+- Github - [@Lfrancos](https://github.com/Lfrancos)
+- Frontend Mentor - [@Lfrancos](https://www.frontendmentor.io/profile/Lfrancos)
