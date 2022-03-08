@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css ">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="./js/script.js" defer></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="filter">
-        <p>Daily</p>
+        <p class="active">Daily</p>
         <p>Weekly</p>
         <p>Monthly</p>
       </div>
@@ -45,16 +45,18 @@
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-          <div class="stats daily">
-            <h3>5hrs <!-- daily --></h3>
-            <p>Previous - 7hrs <!-- daily --></p>
-          </div>
+
+
         </div>
-        <div class="stats weekly">
+        <div class="stats daily">
+          <h3>5hrs <!-- daily --></h3>
+          <p>Previous - 7hrs <!-- daily --></p>
+        </div>
+        <div class="stats weekly inactive">
           <h3>32hrs <!-- weekly --></h3>
           <p>Previous - 36hrs <!-- weekly --></p>
         </div>
-        <div class="stats monthly">
+        <div class="stats monthly inactive">
           <h3>103hrs <!-- monthly --></h3>
           <p>Previous - 128hrs <!-- monthly --></p>
         </div>
@@ -76,11 +78,11 @@
           <h3>1hr <!-- daily --></h3>
           <p>Previous - 2hrs <!-- daily --></p>
         </div>
-        <div class="stats weekly">
+        <div class="stats weekly inactive">
           <h3>10hrs <!-- weekly --></h3>
           <p>Previous - 8hrs <!-- weekly --></p>
         </div>
-        <div class="stats monthly">
+        <div class="stats monthly inactive">
           <h3>23hrs <!-- monthly --></h3>
           <p>Previous - 29hrs <!-- monthly --></p>
         </div>
@@ -102,11 +104,11 @@
           <h3>0hrs <!-- daily --></h3>
           <p>Previous - 1hr <!-- daily --></p>
         </div>
-        <div class="stats weekly">
+        <div class="stats weekly inactive">
           <h3>4hrs <!-- weekly --></h3>
           <p>Previous - 7hrs <!-- weekly --></p>
         </div>
-        <div class="stats monthly">
+        <div class="stats monthly inactive">
           <h3>13hrs <!-- monthly --></h3>
           <p>Previous - 19hrs <!-- monthly --></p>
         </div>
@@ -128,11 +130,11 @@
           <h3>1hr <!-- daily --></h3>
           <p>Previous - 1hr <!-- daily --></p>
         </div>
-        <div class="stats weekly">
+        <div class="stats weekly inactive">
           <h3>4hrs <!-- weekly --></h3>
           <p>Previous - 5hrs <!-- weekly --></p>
         </div>
-        <div class="stats monthly">
+        <div class="stats monthly inactive">
           <h3>11hrs <!-- monthly --></h3>
           <p>Previous - 18hrs <!-- monthly --></p>
         </div>
@@ -153,11 +155,11 @@
           <h3>1hr <!-- daily --></h3>
           <p>Previous - 3hrs <!-- daily --></p>
         </div>
-        <div class="stats weekly">
+        <div class="stats weekly inactive">
           <h3>5hrs <!-- weekly --></h3>
           <p>Previous - 10hrs <!-- weekly --></p>
         </div>
-        <div class="stats monthly">
+        <div class="stats monthly inactive">
           <h3>21hrs <!-- monthly --></h3>
           <p>Previous - 23hrs <!-- monthly --></p>
         </div>
@@ -174,15 +176,15 @@
             <div class="circle"></div>
           </div>
         </div>
-        <div class="stas daily">
+        <div class="stats daily">
           <h3>0hrs <!-- daily --></h3>
           <p>Previous - 1hr <!-- daily --></p>
         </div>
-        <div class="stats weekly">
+        <div class="stats weekly inactive ">
           <h3>2hrs <!-- weekly --></h3>
           <p>Previous - 2hrs <!-- weekly --></p>
         </div>
-        <div class="stats monthly">
+        <div class="stats monthly inactive">
           <h3>7hrs <!-- monthly --></h3>
           <p>Previous - 11hrs <!-- monthly --></p>
         </div>

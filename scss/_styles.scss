@@ -62,6 +62,9 @@ main {
         &:active {
             color: $color-Desaturated-blue;
         }
+        &.active {
+            color: white;
+        }
     }
 }
 .container {
@@ -84,6 +87,9 @@ main {
     // z-index: 1;
     &:hover {
         background-color: hsl(235, 46%, 37%);
+    }
+    .inactive {
+        display: none;
     }
 }
 
@@ -247,16 +253,8 @@ main {
         color: $color-Pale-Blue;
     }
 }
-.daily {
-    display: none;
-}
-.weekly {
-    display: none;
-}
-.monthly {
 
 
-}
 
 
 @media screen and (min-width: 1200px) {

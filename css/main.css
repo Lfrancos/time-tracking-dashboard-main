@@ -263,6 +263,10 @@ main {
   color: #6f76c8;
 }
 
+.filter p.active {
+  color: white;
+}
+
 .container {
   background-color: #1c1f4a;
   border-radius: 1rem;
@@ -282,6 +286,10 @@ main {
 
 .content:hover {
   background-color: #333a8a;
+}
+
+.content .inactive {
+  display: none;
 }
 
 .work {
@@ -435,14 +443,6 @@ main {
 
 .stats p {
   color: #bdc1ff;
-}
-
-.daily {
-  display: none;
-}
-
-.weekly {
-  display: none;
 }
 
 @media screen and (min-width: 1200px) {
